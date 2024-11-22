@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    margin-top: 20px;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 10px 15px;
+    border-radius: 28px;
+}
+
+.contenedor-logo .logo {
+    width: 15vw;
+    height: auto;
+}
+
+.navegacion {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navegacion ul {
+    display: flex;
+    list-style: none;
+}
+
+.navegacion ul li {
+    margin: 0 15px;
+}
+
+.navegacion ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Estilo para el botón de registro */
+.registro-btn {
+    background-color: #48BEA8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+
+.registro-btn:hover {
+    background-color: #218838;
+}
+
+.hamburguesa {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburguesa .barra {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+
+/* Menú desplegable para pantallas pequeñas */
+.menu-desplegable {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    padding-top: 60px;  /* Ajuste para que no quede cubierto por el botón */
+    text-align: center;
+}
+
+.menu-desplegable nav ul {
+    list-style: none;
+}
+
+.menu-desplegable nav ul li {
+    margin: 20px 0;
+}
+
+.menu-desplegable nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+.menu-desplegable .cerrar-menu {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Media query para pantallas de menos de 768px */
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: space-between;
+    }
+
+    .navegacion ul {
+        display: none;
+    }
+
+    .hamburguesa {
+        display: flex;
+    }
+
+    .navegacion.activa ul {
+        display: flex;
+    }
+
+    .contenedor-logo .logo {
+        max-width: 80px;
+    }
+}
+
+/* Media query para pantallas de menos de 480px */
+@media screen and (max-width: 480px) {
+    .navegacion ul li a {
+        font-size: 18px;
+    }
+
+    .contenedor-logo .logo {
+        max-width: 70px;
+    }
+}
