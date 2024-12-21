@@ -129,14 +129,6 @@ a {
     font-size: 2rem;
 }
 
-footer {
-    text-align: center;
-    background-color: #00bcd4;
-    color: #ffffff;
-    padding: 2vh 0;
-    font-size: 1rem;
-}
-
 /* Media Queries */
 @media (max-width: 1024px) {
     header {

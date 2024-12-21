@@ -1,0 +1,150 @@
+/* General */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+.footer {
+  background-color: #48BEA8;
+  color: #fff;
+  width: 100%; /* Asegura que el footer no exceda el ancho */
+  padding: 20px 0;
+  box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px; /* Espaciado interno */
+  box-sizing: border-box;
+}
+
+.footer-section {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.footer-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.footer-section .form-group {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-section form input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.footer-section p {
+  margin: 10px 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section .social-icons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.footer-section .social-icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #fff;
+  padding-top: 10px;
+  font-size: 0.9em;
+}
+
+.footer-bottom strong {
+  color: #000;
+}
+
+/* Responsividad para pantallas medianas */
+@media (max-width: 1024px) {
+  .footer-container {
+    padding: 10px;
+  }
+
+  .footer-section {
+    padding: 15px;
+  }
+}
+
+/* Responsividad para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center; /* Centra todo el contenido */
+    padding: 10px; /* Ajusta el espaciado para evitar exceso */
+  }
+
+  .footer-section {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .footer-section .form-group {
+    flex-direction: column; /* Los campos de formulario se apilan */
+    gap: 5px;
+  }
+
+  .footer-section form input {
+    margin: 5px 0;
+    font-size: 0.9em; /* Reducir el tamaño de la fuente */
+    padding: 8px;
+  }
+
+  .footer-section .social-icons {
+    justify-content: center; /* Centra los iconos */
+  }
+
+  .footer-bottom {
+    font-size: 0.8em;
+  }
+}
+
+/* Responsividad adicional para pantallas extra pequeñas */
+@media (max-width: 480px) {
+  .footer-section h3 {
+    font-size: 1.2em;
+  }
+
+  .footer-section form input {
+    font-size: 0.8em;
+    padding: 6px;
+  }
+
+  .footer-section .social-icons img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footer-bottom {
+    font-size: 0.7em;
+  }
+}
