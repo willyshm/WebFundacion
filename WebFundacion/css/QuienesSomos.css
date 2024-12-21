@@ -1,0 +1,118 @@
+/* Reseteo básico */
+body,
+h1,
+h2,
+p,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+/* Sección "Quiénes Somos" */
+.quienes-somos {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+/* Imagen de la sección */
+.imagen-seccion {
+    flex: 0 50%;
+    display: flex;
+    margin: 0;
+}
+
+.imagen-seccion img {
+    width: 100%;
+    max-width: 880px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Contenido principal */
+.contenido {
+    flex: 0 0 50%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #ffffff;
+}
+
+/* sección de Misión e Impacto Social */
+.mision-impacto-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.mision {
+    margin-top: 20px;
+    /*background-color: #4a4a4a;*/
+    height: 100%;
+    width: 100%;
+}
+
+.subtitulo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #2a2a2a;
+    margin-bottom: 0;
+}
+
+.mision p {
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+/* Estilo de la sección "Impacto Social */
+.impacto-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 40px;
+    width: 100%; 
+    height: auto; 
+    aspect-ratio: 1038 / 258; 
+  }
+  
+  .imagenes-impacto {
+    display: flex;
+    gap: 0px;
+    width: 100%;
+  }
+  .seccionTxt{
+    background-color: #48BEA8;
+  }
+  .imagenes-impacto img {
+    background-color: #4a4a4a4f;
+    width: 30%; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .impacto-social {
+      width: 100%; 
+      aspect-ratio: 1038 / 258; 
+    }
+  
+    .imagenes-impacto {
+      flex-direction: column;
+      gap: 20px;
+    }
+  
+    .imagenes-impacto img {
+      width: 100%; 
+    }
+  }

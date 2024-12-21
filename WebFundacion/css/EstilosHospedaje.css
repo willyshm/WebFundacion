@@ -1,0 +1,174 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: #222;
+  }
+
+.BannerHospedaje{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/hospedaje/CasaAnimadas.jpg') center/cover no-repeat;
+}
+
+.hero {
+    text-align: center;
+    padding: 10rem 2rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero h2 {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+  }
+  
+  .hero .cta-btn {
+    background: #00b894;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background 0.3s;
+  }
+  
+  .hero .cta-btn:hover {
+    background: #009e74;
+  }
+
+
+  /* Sección Hospedajes */
+  .hospedajes {
+    padding: 4rem 2rem;
+    background: #fff;
+    color: #000;
+    text-align: center;
+  }
+  
+  .hospedajes .section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  .hospedajes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en la cuadrícula principal */
+    grid-template-rows: auto auto auto; /* Tres filas en la cuadrícula */
+    gap: 1rem; /* Espacio entre las celdas */
+  }
+  
+  .hospedajes-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas en la cuadrícula */
+    grid-template-rows: auto auto auto; /* Tres filas en la cuadrícula */
+    gap: 1rem; /* Espacio entre las celdas */
+  }
+  
+  /* Estilo para todos los elementos de la cuadrícula */
+  .grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Primera fila */
+  .hospedajes-grid div:nth-child(1) {
+    grid-column: span 1; /* Primer div cuadrado */
+    grid-row: span 1;
+  }
+  
+  .hospedajes-grid div:nth-child(2) {
+    grid-column: span 1; /* Segundo div cuadrado */
+    grid-row: span 1;
+  }
+  
+  .hospedajes-grid div:nth-child(3) {
+    grid-column: span 2; /* Tercer div rectangular */
+    grid-row: span 1;
+  }
+  
+  /* Segunda fila */
+  .hospedajes-grid div:nth-child(4) {
+    grid-column: span 2; /* Cuarto div rectangular */
+    grid-row: span 1;
+  }
+  
+  .hospedajes-grid div:nth-child(5) {
+    grid-column: span 1; /* Quinto div cuadrado */
+    grid-row: span 1;
+  }
+  
+  .hospedajes-grid div:nth-child(6) {
+    grid-column: span 1; /* Sexto div cuadrado */
+    grid-row: span 1;
+  }
+  
+  /* Tercera fila */
+  .hospedajes-grid div:nth-child(7) {
+    grid-column: span 1; /* Cada div es cuadrado */
+    grid-row: span 1;
+  }
+  
+  .hospedajes-grid div:nth-child(8) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .hospedajes-grid div:nth-child(9) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  .hospedajes-grid div:nth-child(10) {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .hospedajes-grid {
+      grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas medianas */
+    }
+  
+    .hospedajes-grid div:nth-child(3),
+    .hospedajes-grid div:nth-child(4) {
+      grid-column: span 2; /* Los elementos rectangulares ocupan toda la fila */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hospedajes-grid {
+      grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+  
+    .grid-item {
+      padding: 0.5rem; /* Reducir el espacio interno */
+    }
+  }
+  

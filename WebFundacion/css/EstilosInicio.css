@@ -1,0 +1,198 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;   
+    position: relative;
+    background-image: url('/img/inicio/BannerInicio.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    overflow: hidden;
+   
+}
+/* Main Content */
+.main-content {
+    padding: 32vh 15vw;
+    padding-left: 1.5vw; 
+    text-align: start;
+}
+
+.main-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+}
+
+.text-content {
+    position: relative;
+    z-index: 1;
+}
+
+.main-heading {
+    font-size: 3.5vw; 
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    color: white;
+}
+
+.subheading {
+    font-size: 1.5vw;
+    color: #ffffff;
+    margin-top: 10px;
+    padding: 0 15vw;
+    padding-left: 0.3vw;
+}
+
+
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Altura completa */
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Estructura en columna */
+    background-image: url('/img/inicio/BannerInicio.jpg'); /* Fondo */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Capa oscura */
+    z-index: -1;
+}
+
+/* Contenedor principal */
+.container {
+    flex: 1; /* Toma todo el espacio restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra el contenido verticalmente */
+    padding: 20px;
+}
+
+/* Contenido principal */
+.main-content {
+    flex: 1; /* Crece automáticamente */
+    padding: 5vh 10vw;
+    text-align: start;
+    color: white;
+}
+
+.main-heading {
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.subheading {
+    font-size: 1.2vw;
+    margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #48BEA8;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    width: 50%;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9em;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+
+.footer-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

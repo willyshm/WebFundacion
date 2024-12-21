@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilingual Exchange Foundation</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="contenedor-logo">
+            <img src="/img/logos/LogoHorizontal.png" alt="Logo" class="logo">
+        </div>
+
+        <nav class="navegacion">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/html/QuienesSomos.html">¿Quiénes Somos?</a></li>
+                <li><a href="/html/AcademiaEsp.html">Programa de español</a></li>
+                <li><a href="/html/Hospedaje.html">Hospedaje</a></li>
+                <li><a href="/html/Voluntariado.html">Voluntariado</a></li>
+            </ul>
+        </nav>
+        <img class="language-icon" src="/img/logos/Lenguaje.png" alt="">
+        <button id="language-toggle" class="language-button">ES</button>
+        <button class="registro-btn">Registro</button>
+
+        <div class="hamburguesa" id="hamburguesa">
+            <span class="barra"></span>
+            <span class="barra"></span>
+            <span class="barra"></span>
+        </div>
+    </header>
+
+    <!-- Menú desplegable -->
+    <div class="menu-desplegable" id="menu-desplegable">
+        <button class="cerrar-menu" id="cerrar-menu">X</button>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/html/QuienesSomos.html">¿Quiénes Somos?</a></li>
+                <li><a href="/html/AcademiaEsp.html">Programa de español</a></li>
+                <li><a href="/html/Hospedaje.html">Hospedaje</a></li>
+                <li><a href="/html/Voluntariado.html">Voluntariado</a></li>
+                <li><a href="#">Registro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <!--seccion Footer-->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Sección Regístrate -->
+            <div class="footer-section left">
+                <h3>Regístrate</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Primer nombre">
+                        <input type="text" placeholder="Segundo nombre">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Primer apellido">
+                        <input type="text" placeholder="Segundo apellido">
+                    </div>
+                    <input type="email" placeholder="Correo electrónico">
+                    <input type="tel" placeholder="Número de teléfono">
+                </form>
+            </div>
+            <!-- Sección Contáctanos -->
+            <div class="footer-section right">
+                <h3>Contáctanos</h3>
+                <p>Cúcuta, Colombia</p>
+                <p><a href="mailto:cucutavoluntariado@gmail.com">cucutavoluntariado@gmail.com</a></p>
+                <p>Calle #X-XX, Carrera X, Edificio XXXXX, Barrio XXXXX</p>
+                <p>NIT XXXXXXXXXXXX</p>
+                <p>3076235412</p>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                    <a href="#"><img src="email-icon.png" alt="Email"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>Created 2024 | Powered by <strong>CREATIC</strong></p>
+        </div>
+    </footer>
+
+    <script src="/scripts/Menu.js"></script>
+
+</body>
+
+</html>

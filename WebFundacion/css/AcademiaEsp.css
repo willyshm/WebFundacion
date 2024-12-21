@@ -1,0 +1,262 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('/img/Academia/BannerSuperior.png') center/cover no-repeat;
+
+}
+/* Hero */
+.hero {  
+    height: 50vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    margin: 0;
+    padding: 0 5vw;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2vh;
+}
+
+.hero button {
+    width: 18vw;
+    height: 7vh;
+    font-size: 2rem;
+    background-color: #48BEA8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4vw;
+    padding: 4vh 1vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.section {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.section h3 {
+    color: #48BEA8;
+    font-size: 3.063rem;
+}
+
+.section img {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1.5vh;
+}
+
+/* Team */
+.team {
+    width: 100%;
+    min-height: 50vh;
+    /* Ajustar altura */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/img/Academia/bannerMember.png') center/cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 4vh 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.team-member {
+    width: 18vw;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 10%;
+    margin-bottom: 2vh;
+}
+
+.team h3 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 3vh;
+}
+
+.team-member p {
+    font-size: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header {
+        height: 10vh;
+        width: auto;
+        padding: 2vw 3vw;
+    }
+
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero button {
+        width: 25vw;
+        height: 7vh;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 2vh 2vw;
+    }
+
+    .team {
+        padding: 3vh 2vw;
+    }
+
+    .team h3 {
+        font-size: 2rem;
+    }
+
+    .team-member {
+        width: 20vw;
+    }
+
+    .team-member img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 3vw;
+        height: 15vh;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+
+    .hero button {
+        width: 30vw;
+        height: 8vh;
+        font-size: 1.8rem;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 2vh 3vw;
+    }
+
+    .team {
+        min-height: auto;
+        padding: 2vh 2vw;
+    }
+
+    .team h3 {
+        font-size: 2rem;
+    }
+
+    .team-member {
+        width: 22vw;
+    }
+
+    .team-member img {
+        width: 100%;
+    }
+
+    .register-button {
+        width: 30vw;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 4vw 5vw;
+        height: 20vh;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero button {
+        width: 35vw;
+        height: 6vh;
+        font-size: 1.5rem;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 1vh 2vw;
+    }
+
+    .team {
+        padding: 1.5vh 2vw;
+    }
+
+    .team h3 {
+        font-size: 1.8rem;
+    }
+
+    .team-member {
+        width: 30vw;
+    }
+
+    .team-member img {
+        width: 100%;
+    }
+}
